@@ -1,2 +1,2 @@
 # trivia-website
-A basic trivia website, utilizing the Open Trivia DB API
+A basic trivia website, utilizing the [Open Trivia DB API](https://opentdb.com/)
