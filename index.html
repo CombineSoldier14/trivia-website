@@ -4,6 +4,7 @@
     <title>Trivia</title>
 </head>
 <body>
+<div id="main">
     <h1>Random Trivia Website</h1>
     <p>By CombineSoldier14 (https://github.com/CombineSoldier14)</p>
     <p>Made possible thanks to the OpenTDB! (https://opentdb.com)</p>
@@ -46,9 +47,13 @@
         <option value="boolean">True / False</option>
     </select>
     <button id="trivia_button", onclick="getQuestion()">Get Question!</button>
-    <div id="question"></div>
-    <div class="answers", id="answers"></div>
-    <div id="response"></div>
+    <div id="questionArea">
+        <div id="question"></div>
+        <div class="answers", id="answers"></div>
+        <div id="response"></div>
+    </div>
     <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</div>
 </body>
 </html>
