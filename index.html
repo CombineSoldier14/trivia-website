@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Trivia</title>
+    <title>Random Trivia</title>
 </head>
 <body>
 <div id="main">
-    <h1>Random Trivia Website</h1>
-    <p>By CombineSoldier14 (https://github.com/CombineSoldier14)</p>
-    <p>Made possible thanks to the OpenTDB! (https://opentdb.com)</p>
-    <select name="category" id="category">
+    <div id="header">
+        <h1>Random Trivia Website</h1>
+        <p>By CombineSoldier14 (https://github.com/CombineSoldier14)</p>
+        <p>Made possible thanks to the OpenTDB! (https://opentdb.com)</p>
+    
+    <select name="category" id="category" class="dropdown">
         <option value="any">Any Category</option>
         <option value="9">General Knowledge</option>
         <option value="10">Entertainment: Books</option>
@@ -35,13 +37,14 @@
         <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
         <option value="32">Entertainment: Cartoon &amp; Animations</option>		
     </select>
-    <select name="difficulty" id="difficulty">
+
+    <select name="difficulty" class="dropdown" id="difficulty">
         <option value="any">Any Difficulty</option>
         <option value="easy">Easy</option>
         <option value="medium">Medium</option>
         <option value="hard">Hard</option>
     </select>
-    <select name="type" id="type">
+    <select name="type" id="type" class="dropdown">
         <option value="any">Any Type</option>
         <option value="multiple">Multiple Choice</option>
         <option value="boolean">True / False</option>
@@ -51,6 +54,7 @@
         <div id="question"></div>
         <div class="answers", id="answers"></div>
         <div id="response"></div>
+    </div>
     </div>
     <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">

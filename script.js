@@ -22,7 +22,7 @@ function getQuestion() {
     fetch(url)
         .then((response) => response.json())
         .then((data) => {
-            document.getElementById("question").innerHTML = data.results[0].question;
+            document.getElementById("question").innerHTML = `<u>${data.results[0].question}</u>`;
             var answers = data.results[0].incorrect_answers;
             var correctAnswer = data.results[0].correct_answer;
             answers.push(correctAnswer);

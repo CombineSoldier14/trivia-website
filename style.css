@@ -1,20 +1,31 @@
 body {
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(65, 65, 65) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(46, 46, 46) 100%);
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+#header {
+    width: 80%;
+    padding-bottom: 1%;
+    margin: 0 auto;
+    border: 3px solid #353535;
+    border-style: ridge;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(31, 31, 31) 100%);
+}
+
 #main {
+    padding-top: 1%;
     height: 90vh;
     width: 60%;
     margin: 0 auto;
     color:aliceblue;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    border: 7px solid #000;
+    border: 7px solid #000935;
     border-style: ridge;
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(0, 58, 124) 100%);
 }
@@ -22,4 +33,23 @@ body {
 #questionArea {
     padding: 70px;
     font-size: 20px;
+}
+
+button {
+    color: white;
+    border: 3px solid #4d4d4d;
+    border-style: ridge;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 100%); 
+}
+
+select {
+    border: 2px solid #626262;
+    border-style: ridge;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(0, 217, 255) 0%, rgb(0, 89, 255) 100%); 
+}
+
+#question {
+    font-weight: bold;
 }
